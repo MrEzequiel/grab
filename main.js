@@ -76,7 +76,7 @@ const showAlert = {
     target.parentElement.querySelector('.input-container').style.borderColor =
       ''
     target.parentElement.querySelector('.input-container .icon').style.color =
-      ''
+      '#fff'
     target.innerHTML = ''
   }
 }
@@ -91,5 +91,9 @@ fields.forEach(field => {
 // EVENTO PARA DETECTAR O ENVIO DO FORMULÁRIO, SE TIVER TUDO OK
 document.querySelector('form').addEventListener('submit', e => {
   e.preventDefault()
-  console.log('Formulário enviado!')
+  // showAlert.remove()
+  fields.forEach(field => {
+    showAlert.remove(field.parentElement.parentElement.querySelector('p'))
+    field.value = ''
+  })
 })
