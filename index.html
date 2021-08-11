@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Grab</title>
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div class="logo">
+          <img src="./assets/grab-logo.svg" alt="grab-logo" />
+        </div>
+
+        <form action="#" id="form">
+          <div class="input">
+            <div class="input-container">
+              <span class="material-icons icon"> alternate_email </span>
+              <input type="email" id="email-login" required />
+            </div>
+            <p class="error"></p>
+          </div>
+
+          <div class="input">
+            <div class="input-container">
+              <span class="material-icons icon"> lock </span>
+              <input type="password" id="password-login" required />
+            </div>
+            <p class="error"></p>
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+
+        <footer>
+          <p>Problemas para entrar?</p>
+          <a href="#">clique aqui</a>
+        </footer>
+      </section>
+
+      <section id="image-login">
+        <img src="./assets/image-login.png" alt="imagem login" />
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
