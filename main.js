@@ -70,6 +70,7 @@ const showAlert = {
       '#FF5757'
     target.parentElement.querySelector('.input-container .icon').style.color =
       '#FF5757'
+    target.classList.add('active')
     target.innerHTML = message
   },
   remove(target) {
@@ -77,7 +78,10 @@ const showAlert = {
       ''
     target.parentElement.querySelector('.input-container .icon').style.color =
       '#fff'
-    target.innerHTML = ''
+    target.classList.remove('active')
+    setTimeout(() => {
+      target.innerHTML = ''
+    }, 500)
   }
 }
 
